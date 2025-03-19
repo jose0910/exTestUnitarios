@@ -1,17 +1,26 @@
-## Examen de Test Unitarios
+
+
+
+###  `comprobarDNI(String dni, char letra)`
+- Comprobe si el DNI es válido comparando la letra.
+-  Se valida la letra a **mayúscula**.
+
+###  `calcularLetraDNI(String dni)`
+- Usa el módulo *%23* para calcular la letra correcta según la normativa del DNI.
 
 ---
 
-### Enunciado
+##  Pruebas Implementadas:
+1. *`testComprobarDNI`*  
+    Verifica que la validación del DNI sea correcta.
+2. *`testCalcularLetraDNI`*  
+    Asegura que la letra calculada sea la correcta.
 
-Con el código de este repositorio realiza:
-
-- (*4 puntos*) Los test unitarios de los **dos** métodos, utiliza test **parametrizados**. Suponiendo que la `string` DNI, siempre es un DNI válido.
-- (*2 puntos*) En el código, hay un error, ¿lo pudiste comprabar en los test? ¿Plantea la solución?
-- (*3 puntos*) Si no hubiera una comprobación previamente encuanto a la longitud de la `string` del DNI, ¿Qué hay que cambiar en los tests para que comprueben estos casos?
-
-Entrega tu repositorio con el código y los test. Además un `Readme` explicando y justificando cada apartado
-
-Formato del `Readme` *1 punto*
+### Error del codigo
+- las letras distinguían entre mayúsculas y minúsculas.
+- **Solución:** Convertir la letra a mayúscula con `Character.toUpperCase(letra)`.
 
 ---
+
+
+
